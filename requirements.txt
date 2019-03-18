@@ -1,0 +1,12 @@
+numpy
+scipy
+torch==0.4.0
+torchvision
+cffi
+visdom
+tensorboardX
+easydict
+pillow
+imageio
+termcolor
+scikit-video
