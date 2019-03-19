@@ -80,8 +80,8 @@ python3 main.py --load=${model} --code=5e-2 --scale=2e-2 --lr-pmo=3e-3 --noise=0
 ```
 This will create the following output files:
 1. the optimized object mesh (saved into the directory `optimized_mesh`),
-2. the input video sequence with the overlayed 3D mesh (saved to `video`),
-3. (coming soon!) a 3D mesh model (in `.obj` format) with textures estimated from the input RGB sequence
+2. the input video sequence with the overlayed 3D mesh (saved to `video`), and
+3. (coming soon!) a 3D mesh model (in `.obj` format) with textures estimated from the input RGB sequence.
 
 The flags `--log-tb` and `--log-vis` toggles visualization of the optimization process.
 More optional arguments can be found by running `python3 main_pretrain.py --help`.  
