@@ -72,8 +72,8 @@ wget https://cmu.box.com/shared/static/zakir5pi9xma4l3d5c2g74i8r0lggp36.npz # ch
 
 ### Running the code
 
-To try a demo of the photometric mesh optimization, download our pretrained model for [cars](https://cmu.box.com/shared/static/jgif23ytibtektwwcji8wiv0jbubzs08.npz) (in `.npz` format).
-Then run (after setting the `model` variable)
+To try a demo of the photometric mesh optimization, download our pretrained model for [cars](https://cmu.box.com/shared/static/jgif23ytibtektwwcji8wiv0jbubzs08.npz).
+Then run (setting the `model` variable to the downloaded checkpoint)
 ```
 model=pretrained/02958343_atl25.npz
 python3 main.py --load=${model} --code=5e-2 --scale=2e-2 --lr-pmo=3e-3 --noise=0.1 --video
