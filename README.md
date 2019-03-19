@@ -72,12 +72,14 @@ wget https://cmu.box.com/shared/static/zakir5pi9xma4l3d5c2g74i8r0lggp36.npz # ch
 
 ### Running the code
 
-To try a demo of the photometric mesh optimization, run (after setting the `model` variable)
+To try a demo of the photometric mesh optimization, download our pretrained model for [cars](https://cmu.box.com/shared/static/jgif23ytibtektwwcji8wiv0jbubzs08.npz) (in `.npz` format).
+Then run (after setting the `model` variable)
 ```
 model=pretrained/02958343_atl25.npz
 python3 main.py --load=${model} --code=5e-2 --scale=2e-2 --lr-pmo=3e-3 --noise=0.1 --video
 ```
-The flags `--log-tb` and `--log-vis` toggles visualization of the optimization process.  
+The optimized object mesh will be saved into the directory `optimized_mesh`, and the input video sequence with the overlayed 3D mesh will be saved to `video`.  
+The flags `--log-tb` and `--log-vis` toggles visualization of the optimization process.
 More optional arguments can be found by running `python3 main_pretrain.py --help`.  
 
 ### Pretraining
