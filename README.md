@@ -111,7 +111,7 @@ For pretraining, we provide three types of data visualization:
 If you find our code useful for your research, please cite
 ```
 @inproceedings{lin2019photometric,
-  title={ST-GAN: Spatial Transformer Generative Adversarial Networks for Image Compositing},
+  title={Photometric Mesh Optimization for Video-Aligned 3D Object Reconstruction},
   author={Lin, Chen-Hsuan and Wang, Oliver and Russell, Bryan C and Shechtman, Eli and Kim, Vladimir G and Fisher, Matthew and Lucey, Simon},
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition ({CVPR})},
   year={2019}
