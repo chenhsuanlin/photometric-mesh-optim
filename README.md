@@ -1,5 +1,11 @@
 ## Photometric Mesh Optimization for Video-Aligned 3D Object Reconstruction
-Chen-Hsuan Lin, Oliver Wang, Bryan C. Russell, Eli Shechtman, Vladimir G. Kim, Matthew Fisher, and Simon Lucey  
+[Chen-Hsuan Lin](https://chenhsuanlin.bitbucket.io/),
+[Oliver Wang](http://www.oliverwang.info/),
+[Bryan C. Russell](http://bryanrussell.org/),
+[Eli Shechtman](https://research.adobe.com/person/eli-shechtman),
+[Vladimir G. Kim](http://www.vovakim.com/),
+[Matthew Fisher](https://techmatt.github.io/),
+and [Simon Lucey](http://www.simonlucey.com/)  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019  
 
 Website: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim  
