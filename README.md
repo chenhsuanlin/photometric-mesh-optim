@@ -14,7 +14,7 @@ arXiv preprint: https://arxiv.org/abs/????
 
 We provide PyTorch code for the following experiments:
 - ShapeNet+SUN360 sequences
-- (Real-world videos coming soon!)
+- (coming soon!) Real-world videos
 
 --------------------------------------
 
@@ -78,7 +78,11 @@ Then run (setting the `model` variable to the downloaded checkpoint)
 model=pretrained/02958343_atl25.npz
 python3 main.py --load=${model} --code=5e-2 --scale=2e-2 --lr-pmo=3e-3 --noise=0.1 --video
 ```
-The optimized object mesh will be saved into the directory `optimized_mesh`, and the input video sequence with the overlayed 3D mesh will be saved to `video`.  
+This will create the following output files:
+1. the optimized object mesh (saved into the directory `optimized_mesh`),
+2. the input video sequence with the overlayed 3D mesh (saved to `video`),
+3. (coming soon!) a 3D mesh model (in `.obj` format) with textures estimated from the input RGB sequence
+
 The flags `--log-tb` and `--log-vis` toggles visualization of the optimization process.
 More optional arguments can be found by running `python3 main_pretrain.py --help`.  
 
