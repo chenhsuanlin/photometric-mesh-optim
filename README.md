@@ -99,8 +99,9 @@ More optional arguments can be found by running `python3 main_pretrain.py --help
 #### Visualizing the results  
 We've included code to visualize the training over TensorBoard(X). To execute, run
 ```
-tensorboard --logdir=summary_GROUP --port=6006
+tensorboard --logdir=summary/GROUP --port=6006
 ```
+where `GROUP` is specified in the pretraining arguments.  
 For pretraining, we provide three types of data visualization:  
 1. **SCALARS**: training and test loss curves over epochs  
 2. **IMAGES**: sample input images  
