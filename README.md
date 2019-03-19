@@ -8,7 +8,7 @@
 and [Simon Lucey](http://www.simonlucey.com/)  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019  
 
-Website: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim  
+Project page: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim  
 Paper: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim/paper.pdf  
 arXiv preprint: https://arxiv.org/abs/????
 
