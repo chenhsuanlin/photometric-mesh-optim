@@ -9,8 +9,8 @@ and [Simon Lucey](http://www.simonlucey.com/)
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019  
 
 Project page: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim  
-Paper: ????  
-arXiv preprint: https://arxiv.org/abs/????
+Paper: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim/paper.pdf  
+arXiv preprint: https://arxiv.org/abs/1903.08642  
 
 We provide PyTorch code for the following experiments:
 - ShapeNet+SUN360 sequences
