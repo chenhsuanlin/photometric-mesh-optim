@@ -84,7 +84,7 @@ This will create the following output files:
 3. (coming soon!) a 3D mesh model (in `.obj` format) with textures estimated from the input RGB sequence.
 
 The flags `--log-tb` and `--log-vis` toggles visualization of the optimization process.
-More optional arguments can be found by running `python3 main_pretrain.py --help`.  
+More optional arguments can be found by running `python3 main.py --help`.  
 
 ### Pretraining
 To pretrain AtlasNet with our new dataset (high-resolution ShapeNet rendering + SUN360 cropped backgrounds), run the following command (taking the airplane category for example)
