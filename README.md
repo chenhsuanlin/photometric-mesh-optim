@@ -12,6 +12,8 @@ Project page: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim
 Paper: https://chenhsuanlin.bitbucket.io/photometric-mesh-optim/paper.pdf  
 arXiv preprint: https://arxiv.org/abs/1903.08642  
 
+<p align="center"><img src="cover.png" width=800></p>
+
 We provide PyTorch code for the following experiments:
 - ShapeNet+SUN360 sequences
 - (coming soon!) Real-world videos
