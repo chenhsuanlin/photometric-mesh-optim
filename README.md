@@ -72,6 +72,12 @@ wget https://cmu.box.com/shared/static/zakir5pi9xma4l3d5c2g74i8r0lggp36.npz # ch
 
 --------------------------------------
 
+### Compiling the CUDA libraries
+The `meshrender` library can be compiled by running `./build.sh` under the directory `meshrender`.  
+The `chamfer` library is precompiled from the AtlasNet [repository](https://github.com/ThibaultGROUEIX/AtlasNet).
+
+--------------------------------------
+
 ### Running the code
 
 To try a demo of the photometric mesh optimization, download our pretrained model for [cars](https://cmu.box.com/shared/static/jgif23ytibtektwwcji8wiv0jbubzs08.npz).
