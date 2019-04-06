@@ -66,20 +66,15 @@ class Rasterize(torch.autograd.Function):
 
 	@staticmethod
 	def forward(ctx,opt,B,cam_intr,face_vertices_trans,batch_face_index):
-		cam_intr = cam_intr.double()
-		face_vertices_trans = face_vertices_trans.double()
 		index_map = torch.ones(B,opt.H,opt.W,device=opt.device,dtype=torch.int32).mul_(-1)
-		baryc_map = torch.zeros(B,opt.H,opt.W,3,device=opt.device,dtype=torch.float64)
-		inv_depth_map = torch.zeros(B,opt.H,opt.W,device=opt.device,dtype=torch.float64)
+		baryc_map = torch.zeros(B,opt.H,opt.W,3,device=opt.device,dtype=torch.float32)
+		inv_depth_map = torch.zeros(B,opt.H,opt.W,device=opt.device,dtype=torch.float32)
 		if "cuda" in opt.device:
 			lock_map = torch.zeros(B,opt.H,opt.W,device=opt.device,dtype=torch.int32)
 			meshrender.forward_cuda(cam_intr,face_vertices_trans,batch_face_index,index_map,baryc_map,inv_depth_map,lock_map)
 		else:
 			meshrender.forward(cam_intr,face_vertices_trans,batch_face_index,index_map,baryc_map,inv_depth_map)
-		mask_map = (index_map!=-1).double()
-		baryc_map = baryc_map.float()
-		mask_map = mask_map.float()
-		inv_depth_map = inv_depth_map.float()
+		mask_map = (index_map!=-1).float()
 		return index_map,baryc_map,mask_map,inv_depth_map
 
 	@staticmethod

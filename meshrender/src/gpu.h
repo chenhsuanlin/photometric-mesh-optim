@@ -1,0 +1,7 @@
+int forward_cuda(THCudaTensor *cam_intr, // [3,3]
+				 THCudaTensor *face_vertices_trans, // [F,3,3]
+				 THCudaIntTensor *batch_face_index, // [F]
+				 THCudaIntTensor *index_map, // [B,H,W]
+				 THCudaTensor *baryc_map, // [B,H,W,3]
+				 THCudaTensor *inv_depth_map, // [B,H,W]
+				 THCudaIntTensor *lock_map); // [B,H,W]
