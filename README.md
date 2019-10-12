@@ -22,8 +22,8 @@ We provide PyTorch code for the following experiments:
 
 ### Prerequisites
 
-This code is developed with Python3 (`python3`). PyTorch 0.4.0 is required.
-(Note that 1.0.0 does not work due to the removal of the `cffi` dependency.)  
+This code is developed with Python3 (`python3`). PyTorch 1.0+ is required.  
+(If you wish to run using PyTorch 0.4, please switch to the `pytorch-0.4` branch.)  
 
 First, create a Python virtual environment by running
 ```
@@ -73,8 +73,10 @@ wget https://cmu.box.com/shared/static/zakir5pi9xma4l3d5c2g74i8r0lggp36.npz # ch
 --------------------------------------
 
 ### Compiling the CUDA libraries
-The `meshrender` library can be compiled by running `./build.sh` under the directory `meshrender`.  
-The `chamfer` library is precompiled from the AtlasNet [repository](https://github.com/ThibaultGROUEIX/AtlasNet).
+The `meshrender` library can be compiled by running `python3 setup.py install` under the directory `meshrender`.  
+The `chamfer` library can be compiled by running `python3 setup.py install` under the directory `chamfer`.
+The source code is taken from the AtlasNet [repository](https://github.com/ThibaultGROUEIX/AtlasNet).  
+When compiling CUDA code, you may need to modify `CUDA_PATH` accordingly.  
 
 --------------------------------------
 

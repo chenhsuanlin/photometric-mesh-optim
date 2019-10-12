@@ -73,7 +73,7 @@ class Rasterize(torch.autograd.Function):
 			lock_map = torch.zeros(B,opt.H,opt.W,device=opt.device,dtype=torch.int32)
 			meshrender.forward_cuda(cam_intr,face_vertices_trans,batch_face_index,index_map,baryc_map,inv_depth_map,lock_map)
 		else:
-			meshrender.forward(cam_intr,face_vertices_trans,batch_face_index,index_map,baryc_map,inv_depth_map)
+			meshrender.forward_cpu(cam_intr,face_vertices_trans,batch_face_index,index_map,baryc_map,inv_depth_map)
 		mask_map = (index_map!=-1).float()
 		return index_map,baryc_map,mask_map,inv_depth_map
 

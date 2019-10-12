@@ -208,9 +208,9 @@ class ChamferDistance(torch.autograd.Function):
 		p1 = p1.contiguous()
 		p2 = p2.contiguous()
 		if "cuda" in opt.device:
-			chamfer.nnd_forward_cuda(p1,p2,dist1,dist2,idx1,idx2)
+			chamfer.forward(p1,p2,dist1,dist2,idx1,idx2)
 		else:
-			chamfer.nnd_forward(p1,p2,dist1,dist2,idx1,idx2)
+			raise NotImplementedError("CPU version not implemented")
 		ctx.opt = opt
 		ctx.save_for_backward(p1,p2,dist1,dist2,idx1,idx2)
 		return dist1,dist2
@@ -222,7 +222,7 @@ class ChamferDistance(torch.autograd.Function):
 		grad_p1 = torch.zeros_like(p1)
 		grad_p2 = torch.zeros_like(p2)
 		if "cuda" in opt.device:
-			chamfer.nnd_backward_cuda(p1,p2,grad_p1,grad_p2,grad_dist1,grad_dist2,idx1,idx2)
+			chamfer.backward(p1,p2,grad_p1,grad_p2,grad_dist1,grad_dist2,idx1,idx2)
 		else:
-			chamfer.nnd_backward(p1,p2,grad_p1,grad_p2,grad_dist1,grad_dist2,idx1,idx2)
+			raise NotImplementedError("CPU version not implemented")
 		return None,grad_p1,grad_p2

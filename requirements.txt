@@ -1,9 +1,9 @@
 numpy
 scipy
-torch==0.4.0
-torchvision==0.2.0
-cffi
+torch
+torchvision
 visdom
+tensorboard
 tensorboardX
 easydict
 pillow
